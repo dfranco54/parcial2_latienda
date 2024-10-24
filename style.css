@@ -1,0 +1,70 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header, footer {
+    background-color: #2978df;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+main {
+    display: grid;
+    gap: 20px;
+    padding: 20px;
+}
+
+.tarjeta {
+    border: 1px solid #000000;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: left;
+}
+
+.tarjeta img {
+    max-width: 100%;
+    height: auto;
+}
+
+.tarjeta h3, .tarjeta p {
+    display: flex;
+    margin: 5px 0;
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+footer ul li {
+    margin: 0 10px;
+}
+
+footer ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer ul li a:hover {
+    text-decoration: underline;
+}
+
+@media (min-width: 800px) {
+    main {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+
+@media (max-width: 600px) {
+    main {
+        grid-template-columns: 1fr;
+    }
+}
+
