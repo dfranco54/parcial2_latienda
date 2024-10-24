@@ -1,0 +1,69 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header, footer {
+    background-color: #2978df;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+main {
+    display: grid;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Para pantallas grandes */
+@media (min-width: 768px) {
+    main {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+/* Para pantallas pequeñas */
+@media (max-width: 767px) {
+    main {
+        grid-template-columns: 1fr;
+    }
+}
+
+.card {
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+}
+
+.card h3, .card p {
+    margin: 5px 0;
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+footer ul li {
+    margin: 0 10px;
+}
+
+footer ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer ul li a:hover {
+    text-decoration: underline;
+}
